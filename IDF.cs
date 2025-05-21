@@ -11,13 +11,13 @@ namespace IDF_Operation__First_Strike
     {
         public DateTime DateOfEstablishment { get; set; }
         public string CurrentCommander { get; set; }
-        public  List<string> ListOgStrikeOption { get; set; }
+        public  List<IStrikeOptions> ListOgStrikeOption { get; set; }
 
         public IDF(DateTime DateOfEstablishment, string CurrentCommander)
         {
             this.DateOfEstablishment = DateOfEstablishment;
             this.CurrentCommander = CurrentCommander;
-            this.ListOgStrikeOption = new List<string>();
+            this.ListOgStrikeOption = new List<IStrikeOptions>();
         }
 
 
