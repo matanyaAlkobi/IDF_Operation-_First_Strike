@@ -7,13 +7,18 @@ using System.Threading.Tasks;
 namespace IDF_Operation__First_Strike
 {
 
-    internal abstract class StrikeOption
+    internal abstract class StrikeWeapon
 
     {
         public abstract string NameOfTheWeapon { get; set; }
         public abstract  int NumberOfAttacke { get;}
-        public abstract int FuelQuantity{ get;}
+        public abstract double FuelQuantity{ get;}
         public abstract string WhatCanDestroy { get;}
-        
+
+        public abstract string TypesOfArtillery { get; set; }
+           
+
+
+
     }
 }
