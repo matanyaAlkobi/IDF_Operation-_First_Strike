@@ -9,15 +9,16 @@ namespace IDF_Operation__First_Strike
 {
     internal class IDF
     {
+        StrikeOption wepen;
         public DateTime DateOfEstablishment { get; set; }
         public string CurrentCommander { get; set; }
-        public  List<IStrikeOptions> ListOgStrikeOption { get; set; }
+        public  List<StrikeOption> ListOfStrikeOption { get; set; }
 
         public IDF(DateTime DateOfEstablishment, string CurrentCommander)
         {
             this.DateOfEstablishment = DateOfEstablishment;
             this.CurrentCommander = CurrentCommander;
-            this.ListOgStrikeOption = new List<IStrikeOptions>();
+            this.ListOfStrikeOption = new List<StrikeOption>();
         }
 
 
