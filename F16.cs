@@ -8,10 +8,10 @@ namespace IDF_Operation__First_Strike
 {
     internal class F16 : StrikeOption
     {
-        public void NameOfTheWeapon(string Fighter) { }
-        public void NumberOfAttacke(int num) { num = 20; }
-        public void WhatCanDestroy(string targets) { targets = "Building"; }
-        public void FuelQuantity(int num) { }
+        public override string NameOfTheWeapon => "966cg";
+        public override int NumberOfAttacke => 20;
+        public override int FuelQuantity => 20;
+        public override string WhatCanDestroy => "dcvhjbk";
 
 
     }

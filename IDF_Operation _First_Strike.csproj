@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="F16.cs" />
     <Compile Include="IDF.cs" />
-    <Compile Include="IStrikeOption.cs" />
+    <Compile Include="StrikeOption.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
