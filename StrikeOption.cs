@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation__First_Strike
 {
+
     internal abstract class StrikeOption
+
     {
         public abstract string NameOfTheWeapon { get;}
         public abstract  int NumberOfAttacke { get;}
