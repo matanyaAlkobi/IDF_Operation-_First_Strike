@@ -13,6 +13,18 @@ namespace IDF_Operation__First_Strike
             
 
 
-        }   
+        
+
+            F16 F16_01 = new F16("hhfh");
+  
+            IDF Army = new IDF(DateTime.Now,"ggg");
+
+            Army.ListOfStrikeOption.Add(F16_01);
+            foreach(var ii in Army.ListOfStrikeOption)
+            {
+                Console.WriteLine(ii.NumberOfAttacke);
+            }
+            Console.WriteLine(Army.DateOfEstablishment);
+        }
     }
 }
