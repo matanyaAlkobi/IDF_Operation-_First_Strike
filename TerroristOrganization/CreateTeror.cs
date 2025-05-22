@@ -13,7 +13,6 @@ namespace IDF_Operation__First_Strike
         public override int Weapons {get; set;}               
         public override string Status { get; set; }
 
-
         public int Rank()
         {
             Random random = new Random();
@@ -27,15 +26,7 @@ namespace IDF_Operation__First_Strike
              
             Random random = new Random();
             int num = random.Next(1, 5);
-
-
-
-
-            return num;
-
-
-
-        }
+            return num;        }
 
         public CreateTeror(string name)
         {

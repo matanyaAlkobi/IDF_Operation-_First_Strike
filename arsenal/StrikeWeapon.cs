@@ -12,7 +12,6 @@ namespace IDF_Operation__First_Strike
     {
         public abstract string NameOfTheWeapon { get; set; }
         public abstract  int NumberOfAttacke { get;}
-        public abstract double FuelQuantity{ get;}
         public abstract string WhatCanDestroy { get;}
 
         public abstract string TypesOfArtillery { get; set; }

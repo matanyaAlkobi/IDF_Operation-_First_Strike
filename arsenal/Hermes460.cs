@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation__First_Strike
 {
-    internal class F16 : StrikeWeapon, IArtillery
+    internal class Hermes460 : StrikeWeapon, IArtillery, IFuel
     {
         public override string NameOfTheWeapon { get; set; }
         public override int NumberOfAttacke => 8;
-        public override double FuelQuantity => 20;
-        public override string WhatCanDestroy => "buildings";
+        public double FuelQuantity => 30;
+        public override string WhatCanDestroy => "people, vehicles";
 
         public override string TypesOfArtillery { get; set; }
 
 
-        public F16(string NameOfTheWeapon)
+        public Hermes460(string NameOfTheWeapon)
         {
             this.NameOfTheWeapon = NameOfTheWeapon;
         }
@@ -25,15 +25,13 @@ namespace IDF_Operation__First_Strike
         {
             if (num == 1)
             {
-                TypesOfArtillery = "0.5  ton";
+                TypesOfArtillery = "A bomb destroys people.";
             }
             else if (num == 2)
             {
-                TypesOfArtillery = "1 ton";
+                TypesOfArtillery = "A bomb destroys vehicles";
             }
-            
+
         }
-
-
     }
 }
