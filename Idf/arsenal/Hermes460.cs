@@ -8,6 +8,7 @@ namespace IDF_Operation__First_Strike
 {
     internal class Hermes460 : StrikeWeapon, IArtillery, IFuel
     {
+        public override string TypeOfWeapon => "Hermes460";
         public override string NameOfTheWeapon { get; set; }
         public override int NumberOfAttacke => 8;
         public double FuelQuantity => 30;

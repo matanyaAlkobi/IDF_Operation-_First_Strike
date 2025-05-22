@@ -8,6 +8,7 @@ namespace IDF_Operation__First_Strike
 {
     internal class F16 : StrikeWeapon, IArtillery, IFuel
     {
+        public override string TypeOfWeapon => "F16";
         public override string NameOfTheWeapon { get; set; }
         public override int NumberOfAttacke => 8;
         public double FuelQuantity => 20;
