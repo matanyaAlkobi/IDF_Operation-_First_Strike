@@ -10,6 +10,11 @@ namespace IDF_Operation__First_Strike
     {
         static void Main(string[] args)
         {
+            
+
+
+        
+
             F16 F16_01 = new F16("hhfh");
   
             IDF Army = new IDF(DateTime.Now,"ggg");
