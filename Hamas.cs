@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation__First_Strike
 {
-    internal class Program
+    internal class Hamas
     {
-        static void Main(string[] args)
-        {
-            
+        string DateOfEstablishment = "1987";
+        string CurrentCensus = "Dead 💀 ";
+        List<string> terrorists = new List<string>();
 
-
-        }   
     }
 }
