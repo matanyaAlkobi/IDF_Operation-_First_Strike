@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Idf\AMAN\GetInformation.cs" />
+    <Compile Include="Idf\AMAN\InformationCollection.cs" />
     <Compile Include="Idf\arsenal\IArtillery.cs" />
+    <Compile Include="Idf\arsenal\WeaponsDatabase.cs" />
+    <Compile Include="SystemOperation\OperatingTheSystemAsSelected.cs" />
+    <Compile Include="SystemOperation\SystemMenu.cs" />
     <Compile Include="TerroristOrganization\CreateTeror.cs" />
     <Compile Include="TerroristOrganization\hamas\Hamas.cs" />
     <Compile Include="Idf\arsenal\F16.cs" />
@@ -59,5 +64,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
