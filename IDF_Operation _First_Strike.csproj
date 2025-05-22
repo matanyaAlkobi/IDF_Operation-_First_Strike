@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateTeror.cs" />
+    <Compile Include="Hamas.cs" />
     <Compile Include="F16.cs" />
     <Compile Include="Hermes460.cs" />
     <Compile Include="IArtillery.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="StrikeWeapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terrorist.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
