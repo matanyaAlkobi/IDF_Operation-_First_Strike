@@ -11,6 +11,7 @@ namespace IDF_Operation__First_Strike
     {
         static void Main(string[] args)
         {
+
             //CreateTeror ahmad = new CreateTeror("ahmad");
             //ahmad.Weapon();
 
@@ -32,6 +33,7 @@ namespace IDF_Operation__First_Strike
             }
 
             
+
 
 
         }
