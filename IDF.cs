@@ -10,13 +10,12 @@ namespace IDF_Operation__First_Strike
     internal class IDF
     {
         StrikeWeapon wepen;
-        public DateTime DateOfEstablishment { get; set; }
+        public string DateOfEstablishment = "26.05.1948";
         public string CurrentCommander { get; set; }
         public  List<StrikeWeapon> ListOfStrikeOption { get; set; }
 
-        public IDF(DateTime DateOfEstablishment, string CurrentCommander)
+        public IDF(string CurrentCommander)
         {
-            this.DateOfEstablishment = DateOfEstablishment;
             this.CurrentCommander = CurrentCommander;
             this.ListOfStrikeOption = new List<StrikeWeapon>();
         }

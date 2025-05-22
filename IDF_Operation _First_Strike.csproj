@@ -47,6 +47,7 @@
     <Compile Include="Hermes460.cs" />
     <Compile Include="IArtillery.cs" />
     <Compile Include="IDF.cs" />
+    <Compile Include="IFuel.cs" />
     <Compile Include="M109.cs" />
     <Compile Include="StrikeWeapon.cs" />
     <Compile Include="Program.cs" />

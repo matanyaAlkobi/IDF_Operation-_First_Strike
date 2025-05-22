@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation__First_Strike
 {
-    internal class F16 : StrikeWeapon, IArtillery
+    internal class F16 : StrikeWeapon, IArtillery, IFuel
     {
         public override string NameOfTheWeapon { get; set; }
         public override int NumberOfAttacke => 8;
-        public override double FuelQuantity => 20;
+        public double FuelQuantity => 20;
         public override string WhatCanDestroy => "buildings";
 
         public override string TypesOfArtillery { get; set; }
