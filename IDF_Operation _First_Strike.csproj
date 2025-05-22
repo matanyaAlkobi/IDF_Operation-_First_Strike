@@ -43,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateTeror.cs" />
-    <Compile Include="Hamas.cs" />
-    <Compile Include="F16.cs" />
-    <Compile Include="Hermes460.cs" />
-    <Compile Include="IArtillery.cs" />
-    <Compile Include="IDF.cs" />
-    <Compile Include="IFuel.cs" />
-    <Compile Include="M109.cs" />
-    <Compile Include="StrikeWeapon.cs" />
+    <Compile Include="arsenal\IArtillery.cs" />
+    <Compile Include="TerroristOrganization\CreateTeror.cs" />
+    <Compile Include="TerroristOrganization\hamas\Hamas.cs" />
+    <Compile Include="arsenal\F16.cs" />
+    <Compile Include="arsenal\Hermes460.cs" />
+    <Compile Include="Idf\IDF.cs" />
+    <Compile Include="arsenal\IFuel.cs" />
+    <Compile Include="arsenal\M109.cs" />
+    <Compile Include="arsenal\StrikeWeapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Terrorist.cs" />
+    <Compile Include="TerroristOrganization\Terrorist.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
