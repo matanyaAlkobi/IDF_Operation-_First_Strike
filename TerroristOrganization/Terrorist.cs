@@ -10,7 +10,7 @@ namespace IDF_Operation__First_Strike
     {
         public abstract string TerroristName { get; set; }         // שם המחבל
         public abstract int TerroristRank { get; set; }              //דרגת המחבל
-        public abstract int Weapons { get; set; }                    // נשק 
+        public abstract string Weapons { get; set; }                    // נשק 
         public abstract string Status { get; set; }               // סטטוס חי/מת 
     }
 }
