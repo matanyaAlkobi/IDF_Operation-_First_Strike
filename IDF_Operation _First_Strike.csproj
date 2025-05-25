@@ -50,7 +50,9 @@
     <Compile Include="SystemOperation\OperatingTheSystemAsSelected.cs" />
     <Compile Include="SystemOperation\SystemMenu.cs" />
     <Compile Include="TerroristOrganization\CreateTerorist.cs" />
+
     <Compile Include="TerroristOrganization\DatabaseTrrorists .cs" />
+
     <Compile Include="TerroristOrganization\hamas\Hamas.cs" />
     <Compile Include="Idf\arsenal\F16.cs" />
     <Compile Include="Idf\arsenal\Hermes460.cs" />

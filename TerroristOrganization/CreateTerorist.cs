@@ -55,8 +55,15 @@ namespace IDF_Operation__First_Strike
 
         public override string ToString()
         {
+
+            Dictionary<string, string> TerroristInformation = new Dictionary<string ,string>();
+            TerroristInformation["getInfro"] = "setInfro";
+
+            CreateTerorist terorist = new CreateTerorist(name);
+
             return $"Name: {TerroristName}, Rank: {TerroristRank}, Weapons: {Weapons}, Status: {Status}";
         }
+
 
         }
     }
