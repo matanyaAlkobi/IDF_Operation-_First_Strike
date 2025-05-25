@@ -8,9 +8,9 @@ namespace IDF_Operation__First_Strike
 {
     internal class Hamas
     {
-        string DateOfEstablishment = "1987";
-        string CurrentCensus = "Dead 💀 ";
-        List<string> terrorists = new List<string>();
+        //string DateOfEstablishment = "1987";
+        //string CurrentCensus = "Dead 💀 ";
+        //List<string> terrorists = new List<string>();
 
     }
 }
