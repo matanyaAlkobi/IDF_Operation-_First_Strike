@@ -8,5 +8,6 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
 {
     internal class GetInformation
     {
+
     }
 }
