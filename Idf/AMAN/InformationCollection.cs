@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace IDF_Operation__First_Strike.Idf.AMAN
 {
     internal class InformationCollection
-    {
+    {  
         private int ID;
         private string TerroristBelong;
         private string LastKnownLocation;
@@ -25,7 +25,7 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
         }
 
         public void AddingATerroristToTheDatabase(InformationCollection Terrorist)
-        {
+        {  // 
             TerroristDatabase.Add(Terrorist);
 
         }

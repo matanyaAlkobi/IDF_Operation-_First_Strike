@@ -12,7 +12,7 @@ namespace IDF_Operation__First_Strike
         // מחזירה בהדפסה את  כל  כלי הנשק  הזמינים
         public static void GetWeaponInformationFromTheDB(WeaponsDatabase WeaponsStorageObject = null) 
         {
-            var arsenal = WeaponsStorageObject.weponToolDatabase;
+            var arsenal = WeaponsStorageObject.GetTheWeponDB();
             Console.WriteLine($"You have {arsenal.Count} types of weapons.");
 
             foreach (var itam in arsenal) // ריצה בלולאה על המילון

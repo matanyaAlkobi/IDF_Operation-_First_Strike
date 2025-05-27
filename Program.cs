@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IDF_Operation__First_Strike.Idf.arsenal;
+using IDF_Operation__First_Strike.Idf.DataBases;
 using IDF_Operation__First_Strike.SystemOperation;
 
 namespace IDF_Operation__First_Strike
@@ -21,6 +22,7 @@ namespace IDF_Operation__First_Strike
             M109 aa = new M109("m109-1");
             M109 bb = new M109("m109-2");
             WeaponsDatabase WeaponsStorageObject = new WeaponsDatabase();
+
             WeaponsStorageObject.AddingWeaponsToTheDatabase(dd);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(aa);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(bb);
