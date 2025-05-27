@@ -46,7 +46,9 @@
     <Compile Include="Idf\AMAN\GetInformation.cs" />
     <Compile Include="Idf\AMAN\InformationCollection.cs" />
     <Compile Include="Idf\arsenal\IArtillery.cs" />
-    <Compile Include="Idf\arsenal\WeaponsDatabase.cs" />
+    <Compile Include="Idf\DataBases\WeaponsDatabase.cs" />
+    <Compile Include="Idf\DataBases\ReturningDataFromWeaponsDB.cs" />
+    <Compile Include="SystemOperation\AttackSystem.cs" />
     <Compile Include="SystemOperation\OperatingTheSystemAsSelected.cs" />
     <Compile Include="SystemOperation\SystemMenu.cs" />
     <Compile Include="TerroristOrganization\CreateTerorist.cs" />
