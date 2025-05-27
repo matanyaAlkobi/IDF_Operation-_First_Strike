@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDF_Operation__First_Strike.TerroristOrganization;
+
+
 
 namespace IDF_Operation__First_Strike
 {
@@ -10,7 +13,7 @@ namespace IDF_Operation__First_Strike
     {
         //string DateOfEstablishment = "1987";
         //string CurrentCensus = "Dead 💀 ";
-        //List<string> terrorists = new List<string>();
+        DatabaseTrrorists DatabaseTrrorists = new DatabaseTrrorists();
 
     }
 }
