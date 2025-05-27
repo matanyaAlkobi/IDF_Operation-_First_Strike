@@ -5,11 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IDF_Operation__First_Strike.Idf.arsenal;
-
 using IDF_Operation__First_Strike.SystemOperation;
-
 using IDF_Operation__First_Strike.TerroristOrganization;
-
 
 namespace IDF_Operation__First_Strike
 {
