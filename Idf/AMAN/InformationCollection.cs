@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 namespace IDF_Operation__First_Strike.Idf.AMAN
 {
     internal class InformationCollection
-    {
+    {  
+        private int ID;
         private string TerroristBelong;
         private string LastKnownLocation;
         private DateTime InformationCollectionTime;
@@ -19,10 +20,11 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
             this.TerroristBelong = terroristBelong;
             this.LastKnownLocation = lastKnownLocation;
             this.InformationCollectionTime = informationCollectionTime;
+            this.ID = ID;
         }
 
         public void AddingATerroristToTheDatabase(InformationCollection Terrorist)
-        {
+        {  // 
             TerroristDatabase.Add(Terrorist);
 
         }
