@@ -9,7 +9,7 @@ namespace IDF_Operation__First_Strike.Idf.arsenal
     internal class WeaponsDatabase
     {
 
-        public Dictionary<string, List<StrikeWeapon>> weponToolDatabase = new Dictionary<string, List<StrikeWeapon>>();
+        private Dictionary<string, List<StrikeWeapon>> weponToolDatabase = new Dictionary<string, List<StrikeWeapon>>();
         
          public void AddingWeaponsToTheDatabase(StrikeWeapon WeponObject)
         {
@@ -20,5 +20,11 @@ namespace IDF_Operation__First_Strike.Idf.arsenal
             weponToolDatabase[WeponObject.TypeOfWeapon].Add(WeponObject);
             Console.WriteLine("The weapon has been added to the database.");
         }
+
+        public Dictionary<string, List<StrikeWeapon>>  GetTheWeponDB()
+        {
+            return weponToolDatabase;
+        }
+        
     }
 }

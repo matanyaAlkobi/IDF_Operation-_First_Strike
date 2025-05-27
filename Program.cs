@@ -22,6 +22,7 @@ namespace IDF_Operation__First_Strike
             M109 aa = new M109("m109-1");
             M109 bb = new M109("m109-2");
             WeaponsDatabase WeaponsStorageObject = new WeaponsDatabase();
+
             WeaponsStorageObject.AddingWeaponsToTheDatabase(dd);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(aa);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(bb);
