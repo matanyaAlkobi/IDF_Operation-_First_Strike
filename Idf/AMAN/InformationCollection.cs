@@ -14,8 +14,11 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
         private string TerroristBelong;
         private string LastKnownLocation;
         private DateTime InformationCollectionTime;
+ 
         private List<InformationCollection> TerroristDatabase = new List<InformationCollection>();
-        public InformationCollection(string terroristBelong, string lastKnownLocation, DateTime informationCollectionTime)
+
+
+        public InformationCollection(string terroristBelong, string lastKnownLocation, DateTime informationCollectionTime, int ID)
         {
             this.TerroristBelong = terroristBelong;
             this.LastKnownLocation = lastKnownLocation;
