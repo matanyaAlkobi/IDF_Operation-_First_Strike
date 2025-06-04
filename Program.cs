@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDF_Operation__First_Strike.Idf.AMAN;
 using IDF_Operation__First_Strike.Idf.arsenal;
 using IDF_Operation__First_Strike.SystemOperation;
 using IDF_Operation__First_Strike.TerroristOrganization;
@@ -13,22 +14,23 @@ namespace IDF_Operation__First_Strike
     internal class Program
     {
         static void Main(string[] args)
-   
-            
+
+        {
+            string ApiKey = args[0];
             //CreateTeror ahmad = new CreateTeror("ahmad");
             //ahmad.Weapon();
 
             F16 dd = new F16("f16-1");
             M109 aa = new M109("m109-1");
             M109 bb = new M109("m109-2");
+            AmanDB info = new AmanDB();
             WeaponsDatabase WeaponsStorageObject = new WeaponsDatabase();
-
             WeaponsStorageObject.AddingWeaponsToTheDatabase(dd);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(aa);
             WeaponsStorageObject.AddingWeaponsToTheDatabase(bb);
 
             int choise = SystemMenu.OptionsPanelMenu();
-            OperatingTheSystemAsSelected.OperatingTheSystem(choise, WeaponsStorageObject);
+            OperatingTheSystemAsSelected.OperatingTheSystem(choise, WeaponsStorageObject,info);
 
             //var arsenal = WeaponsStorageObject.weponToolDatabase;
 
@@ -63,19 +65,19 @@ namespace IDF_Operation__First_Strike
 
 
 
-            CreateTerorist t1 = new CreateTerorist("Ahmad");
-            CreateTerorist t2 = new CreateTerorist("Muhamad");
+            //CreateTerorist t1 = new CreateTerorist("Ahmad");
+            //CreateTerorist t2 = new CreateTerorist("Muhamad");
 
-            DatabaseTrrorists TBTerror = new DatabaseTrrorists();
-            TBTerror.AddingTerroristToTheDatabase(t2);
-            TBTerror.AddingTerroristToTheDatabase(t1);
+            //DatabaseTrrorists TBTerror = new DatabaseTrrorists();
+            //TBTerror.AddingTerroristToTheDatabase(t2);
+            //TBTerror.AddingTerroristToTheDatabase(t1);
 
-            foreach (var itam in TBTerror.TerroristInformation.Values)
-            {
-                foreach (var item1 in itam)
-                {
-                    Console.WriteLine(item1);
-                }
+            //foreach (var itam in TBTerror.TerroristInformation.Values)
+            //{
+            //    foreach (var item1 in itam)
+            //    {
+            //        Console.WriteLine(item1);
+            //    }
 
 
 
@@ -106,4 +108,4 @@ namespace IDF_Operation__First_Strike
         }
     }
 
-}
+
