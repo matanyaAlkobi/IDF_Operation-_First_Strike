@@ -8,6 +8,21 @@ namespace IDF_Operation__First_Strike.TerroristOrganization
 {
     internal class DatabaseTrrorists
     {
+        private static DatabaseTrrorists _instance = null;
+
+        private DatabaseTrrorists() { }
+
+        public static DatabaseTrrorists GetInstance()
+        {
+            if(_instance == null)
+            {
+                _instance = new DatabaseTrrorists();
+            }
+            return _instance;
+        }
+
+
+
         public Dictionary<string, List<Terrorist>> TerroristInformation = new Dictionary<string, List<Terrorist>>();
 
         public void AddingTerroristToTheDatabase(Terrorist TerroistObject)
