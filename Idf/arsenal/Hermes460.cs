@@ -12,7 +12,7 @@ namespace IDF_Operation__First_Strike
         public override string NameOfTheWeapon { get; set; }
         public override int NumberOfAttacke => 8;
         public double FuelQuantity => 30;
-        public override string WhatCanDestroy => "people, vehicles";
+        public override string[] WhatCanDestroy => new string[] { "people", "vehicles" };
 
         public override string TypesOfArtillery { get; set; }
 

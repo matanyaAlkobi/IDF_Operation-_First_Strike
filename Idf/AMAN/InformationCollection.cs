@@ -11,14 +11,14 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
     internal class InformationCollection
     {  
         private int ID;
-        private string TerroristBelong;
+        private Terrorist TerroristBelong;
         private string LastKnownLocation;
         private DateTime InformationCollectionTime;
  
         private List<InformationCollection> TerroristDatabase = new List<InformationCollection>();
 
 
-        public InformationCollection(string terroristBelong, string lastKnownLocation, DateTime informationCollectionTime, int ID)
+        public InformationCollection(Terrorist terroristBelong, string lastKnownLocation, DateTime informationCollectionTime, int ID)
         {
             this.TerroristBelong = terroristBelong;
             this.LastKnownLocation = lastKnownLocation;
@@ -27,10 +27,10 @@ namespace IDF_Operation__First_Strike.Idf.AMAN
         }
 
         public void AddingATerroristToTheDatabase(InformationCollection Terrorist)
-        {  // 
+        {
             TerroristDatabase.Add(Terrorist);
-
         }
+
         public List<InformationCollection> ReceivingADatabaseOfTerrorists()
         {
             return TerroristDatabase;

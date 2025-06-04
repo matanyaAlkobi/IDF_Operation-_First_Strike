@@ -4,13 +4,14 @@ using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using IDF_Operation__First_Strike.Idf.AMAN;
 using IDF_Operation__First_Strike.Idf.arsenal;
 
 namespace IDF_Operation__First_Strike.SystemOperation
 {
     internal class OperatingTheSystemAsSelected
     {
-        public static void OperatingTheSystem(int num, WeaponsDatabase WeaponsStorageObject)
+        public static void OperatingTheSystem(int num, WeaponsDatabase WeaponsStorageObject, AmanDB info)
         {
             switch (num)
                 {
@@ -28,6 +29,7 @@ namespace IDF_Operation__First_Strike.SystemOperation
 
                 case 4:
                     AttackSystem Attack = new AttackSystem();
+                    Attack.AttackOperation(WeaponsStorageObject,info);
 
                     break;
                 }
